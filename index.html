@@ -39,36 +39,35 @@
   <div class="relative isolate bg-slate-950">
     <!-- Hero Image Section -->
     <div class="relative h-[80vh] w-full overflow-hidden">
-      <img
-        src="https://lixlim.synology.me:5001/mo/sharing/webapi/entry.cgi/mmexport1718233308210.jpg?id=6469&cache_key=%226469_1759704678%22&type=%22unit%22&size=%22xl%22&passphrase=%22OjmoNh9Ub%22&api=%22SYNO.Foto.Thumbnail%22&method=%22get%22&version=2&_sharing_id=%22OjmoNh9Ub%22"
-        alt="Main Photo" class="h-full w-full object-cover" />
+      <img src="./main.jpg" alt="Main Photo" class="h-full w-full object-cover" />
+      <!-- White overlay -->
+      <div class="absolute inset-0 bg-white/40"></div>
+      <!-- Gradient overlay for bottom transition -->
       <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-950"></div>
+
+      <!-- Invitation text on image -->
+      <div class="absolute inset-0 flex items-end justify-center pb-16">
+        <div class="text-center space-y-4 px-6">
+          <p class="tracking-[0.3em] text-xs uppercase text-white font-semibold"
+            style="text-shadow: 2px 2px 4px rgba(0,0,0,0.8), -1px -1px 2px rgba(0,0,0,0.5);">
+            Lunch Invitation
+          </p>
+          <h1 class="font-display text-4xl leading-tight text-white sm:text-5xl font-semibold"
+            style="text-shadow: 3px 3px 6px rgba(0,0,0,0.9), -2px -2px 4px rgba(0,0,0,0.6);">
+            두 사람의 행복한 시작을<br>축복해주세요
+          </h1>
+        </div>
+      </div>
     </div>
 
     <div class="px-6 pb-16 pt-12 sm:px-10 lg:px-14">
       <div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(216,135,98,0.25),_transparent_60%)]">
       </div>
       <header class="mx-auto max-w-3xl text-center space-y-6">
-        <p class="tracking-[0.3em] text-xs uppercase text-brand-300">
-          Dinner Invitation
-        </p>
-        <h1 class="font-display text-4xl leading-tight text-brand-50 sm:text-5xl">
-          따뜻한 식사 자리에 초대합니다
-        </h1>
         <p class="text-base text-slate-200">
-          오랜만에 서로의 이야기를 나누고 싶은 마음을 작은 식탁 위에
-          정성껏 담았습니다. 천천히 걸어오시는 길마다 향긋한 봄기운이 함께하길
-          바랄게요.
+          저희 두 사람은 지난 2025년 9월 9일, 중국의 산둥성 칭타오시에서 행복한 결혼식을 열었습니다. 하지만 먼 외국에서 평일에 열린 결혼식이었기에 안타깝게 참석하지 못하신 분들이 많아, 멀리서나마
+          저희들의 행복을 축하해주신 많은 분들의 은혜에 보답하고자, 자그마한 식사 자리를 마련했습니다
         </p>
-        <div class="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-          <button id="rsvpButton"
-            class="w-full rounded-full border border-brand-300/70 px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-brand-50 transition hover:bg-brand-500 hover:text-slate-950 sm:w-auto">
-            RSVP & 안내보기
-          </button>
-          <div class="text-sm text-slate-300">
-            모임 시작까지 <span id="countdown" class="font-semibold"></span>
-          </div>
-        </div>
       </header>
 
       <main class="mx-auto mt-12 flex max-w-5xl flex-col gap-10">
@@ -79,7 +78,7 @@
                 Date & Time
               </p>
               <h2 class="font-display text-2xl text-brand-50">
-                12월 13일 토요일
+                2025년 12월 13일 토요일
               </h2>
               <p class="text-slate-300">오후 1시부터 3시까지</p>
             </div>
@@ -94,7 +93,7 @@
                 인천광역시 연수구 컨벤시아대로 153, 2층
               </p>
               <button id="mapButton" class="text-sm text-brand-300 underline underline-offset-4 hover:text-brand-100">
-                길찾기 열기
+                네이버 지도 열기
               </button>
             </div>
             <div class="space-y-1 border-l-4 border-brand-500 pl-4">
@@ -103,7 +102,7 @@
               </p>
               <h2 class="font-display text-2xl text-brand-50">Hosts</h2>
               <p class="text-slate-300">은총 & 나현</p>
-              <p class="text-slate-400 text-sm">문의: 010-1234-5678</p>
+              <p class="text-slate-400 text-sm">문의: 010-5116-1623</p>
             </div>
           </div>
         </section>
@@ -128,23 +127,31 @@
                 <ul class="space-y-3 text-slate-200">
                   <li class="flex gap-2">
                     <span class="text-brand-500">•</span>
-                    <span>식전 빵과 오늘의 스프</span>
+                    <span>트러플 아란치니</span>
                   </li>
                   <li class="flex gap-2">
                     <span class="text-brand-500">•</span>
-                    <span>신선한 계절 샐러드</span>
+                    <span>가리비 관자 카르파치오, 패션 푸르츠 소스</span>
                   </li>
                   <li class="flex gap-2">
                     <span class="text-brand-500">•</span>
-                    <span>셰프 추천 파스타</span>
+                    <span>오늘의 수프</span>
                   </li>
                   <li class="flex gap-2">
                     <span class="text-brand-500">•</span>
-                    <span>최상급 안심 스테이크와 랍스터 테일</span>
+                    <span>송아지 라자냐</span>
                   </li>
                   <li class="flex gap-2">
                     <span class="text-brand-500">•</span>
-                    <span>특선 디저트와 커피 또는 차</span>
+                    <span>숯불에 구운 미국산 안심 스테이크와 랍스터 그라탕</span>
+                  </li>
+                  <li class="flex gap-2">
+                    <span class="text-brand-500">•</span>
+                    <span>라즈베리 무스</span>
+                  </li>
+                  <li class="flex gap-2">
+                    <span class="text-brand-500">•</span>
+                    <span>커피 또는 차</span>
                   </li>
                 </ul>
               </div>
@@ -159,9 +166,7 @@
               <h3 class="font-display text-xl">주차 안내</h3>
             </div>
             <p class="mt-3 text-slate-300">
-              건물 지하 2층에 무료 주차가 가능합니다. 주차권은 발레 파킹
-              데스크에 “은은한 조명 초대”라고 말씀해 주세요. 대중교통 이용 시
-              뚝섬역 8번 출구에서 도보 5분 거리입니다.
+              쉐라톤 그랜드 인천 호텔의 지하 주차장에 3시간 무료 주차가 가능합니다. 자동차로 오시는 분들은 레스토랑에 올라오셔서 담당자에게 자동차 번호를 알려주세요.
             </p>
           </article>
 
@@ -171,8 +176,8 @@
               <h3 class="font-display text-xl">드레스 코드</h3>
             </div>
             <p class="mt-3 text-slate-300">
-              “Smart Casual”을 추천드립니다. 몸이 편안한 무채색 계열 의상에
-              포인트 액세서리를 더하시면 공간과 잘 어울려요.
+              격식없이 가볍게 식사하시는 자리로 생각하고 있기에 드레스코드는 딱히 없습니다. 저희 부부는 때때로 테이블을 돌며 간단한 인사와 짧은 이야기를 나눌거에요. 원하시는 대로 편안하신 복장으로
+              와주세요.
             </p>
           </article>
 
@@ -182,8 +187,7 @@
               <h3 class="font-display text-xl">아기 동반</h3>
             </div>
             <p class="mt-3 text-slate-300">
-              아이 전용 하이체어와 작은 놀이 매트를 준비해 두었습니다. 필요한
-              물품이 있다면 사전에 말씀해 주시면 최대한 마련해 둘게요.
+              아이와 같이 오시는 분들을 위해 어린이용 의자와 식기가 제공됩니다. 또한 키즈메뉴도 별도로 준비되어있다고 하니 레스토랑에 오셔서 아이가 먹을 메뉴를 선택해주세요.
             </p>
           </article>
 
@@ -253,7 +257,7 @@
     const mapButton = document.getElementById('mapButton');
     mapButton.addEventListener('click', () => {
       window.open(
-        'https://map.naver.com/v5/search/%EC%89%90%EB%9D%BC%ED%86%A4%20%EA%B7%B8%EB%9E%9C%EB%93%9C%20%EC%9D%B8%EC%B2%9C%20%ED%98%B8%ED%85%94',
+        'https://map.naver.com/v5/search/%EC%9D%B8%EC%B2%9C%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%97%B0%EC%88%98%EA%B5%AC%20%EC%BB%A8%EB%B2%A4%EC%8B%9C%EC%95%84%EB%8C%80%EB%A1%9C%20153',
         '_blank'
       );
     });
